@@ -219,7 +219,7 @@ const MatchItemOdds: FC<MatchItemOddsProps> = ({ match }) => {
         if (
           odds &&
           Object.keys(odds.odds).length > 0 &&
-          description !== "Konačan ishod"
+          description !== "最终结果"
         ) {
           Object.entries(odds.odds).forEach(([key, value]) => {
             if (count >= 2) return;
@@ -272,7 +272,7 @@ const MatchItemOdds: FC<MatchItemOddsProps> = ({ match }) => {
       });
     } else {
       Object.entries(matchedOdds).forEach(([description, odds]) => {
-        if (description === "Konačan ishod") {
+        if (description === "最终结果") {
           hasKonacanIshod = true;
           if (odds && Object.keys(odds.odds).length > 0) {
             Object.entries(odds.odds).forEach(([key, value]) => {
@@ -335,7 +335,7 @@ const MatchItemOdds: FC<MatchItemOddsProps> = ({ match }) => {
           if (
             odds &&
             Object.keys(odds.odds).length > 0 &&
-            description !== "Konačan ishod"
+            description !== "最终结果"
           ) {
             Object.entries(odds.odds).forEach(([key, value]) => {
               if (count >= 3) return;
