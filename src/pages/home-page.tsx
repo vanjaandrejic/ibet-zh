@@ -46,7 +46,7 @@ const HomePage: FC = () => {
           >
             <MagicSearchIcon fill={"white"} />
             <Typography fontSize={14} sx={{ marginLeft: 2 }}>
-              Pronađi svoju igru...
+              搜索你的游戏...
             </Typography>
           </Box>
         </Button>

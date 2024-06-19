@@ -76,7 +76,7 @@ const TicketsEvidencePage: FC = () => {
         }}
       >
         <Typography fontSize={16} ml={2}>
-          <b>Tiketi</b>
+          <b>票据</b>
         </Typography>
         <IconButton onClick={() => navigate(-1)}>
           <CloseIcon />
@@ -95,28 +95,28 @@ const TicketsEvidencePage: FC = () => {
           {
             key: null,
             value: null,
-            label: "Svi",
+            label: "所有",
             bcgColor: "#121425",
             textColor: "white",
           },
           {
             key: "won",
             value: "WON",
-            label: "Dobitni",
+            label: "盈利",
             bcgColor: "#37E51B",
             textColor: "black",
           },
           {
             key: "loss",
             value: "LOSS",
-            label: "Gubitni",
+            label: "亏损",
             bcgColor: "red",
             textColor: "white",
           },
           {
             key: "active",
             value: "active",
-            label: "Otvoreni",
+            label: "未结",
             bcgColor: "#FFC211",
             textColor: "black",
           },
@@ -185,13 +185,13 @@ const TicketsEvidencePage: FC = () => {
         }}
       >
         <Typography fontSize={12} onClick={() => handleSliderChange(1)}>
-          Danas
+          今天
         </Typography>
         <Typography fontSize={12} onClick={() => handleSliderChange(2)}>
-          Juče
+          昨天
         </Typography>
         <Typography fontSize={12} onClick={() => handleSliderChange(3)}>
-          Mesec
+          月
         </Typography>
       </Box>
       {infoTickets.map((ticket) => {

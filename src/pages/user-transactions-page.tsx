@@ -100,7 +100,7 @@ const UserTransactionsPage: FC = () => {
         }}
       >
         <Typography fontSize={16}>
-          <b>Transakcije</b>
+          <b>交易记录</b>
         </Typography>
         <IconButton onClick={() => navigate(-1)}>
           <CloseIcon />
@@ -119,13 +119,13 @@ const UserTransactionsPage: FC = () => {
         {[
           {
             value: "7",
-            label: "7 dana",
+            label: "7天",
             bcgColor: "#FFC211",
             textColor: "black",
           },
           {
             value: "30",
-            label: "30 dana",
+            label: "30天",
             bcgColor: "#FFC211",
             textColor: "black",
           },

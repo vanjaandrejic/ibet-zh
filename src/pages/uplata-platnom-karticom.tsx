@@ -220,7 +220,7 @@ const CreditCardPayPage: FC = () => {
         }}
       >
         <Typography fontSize={16}>
-          <b>Uplata Platnom Karticom</b>
+          <b>通过支付卡支付</b>
         </Typography>
         <IconButton onClick={() => navigate(-1)}>
           <CloseIcon />
@@ -243,18 +243,17 @@ const CreditCardPayPage: FC = () => {
             window.open("https://promo.365.rs/placanje-karticom--sr/")
           }
         >
-          <u>Uputstvo za uplatu platnim karticama</u>
+          <u>支付卡支付说明</u>
         </Typography>
         <Typography fontSize={14} sx={{ marginTop: 1 }}>
-          Minimalna vrednost uplate iznosi <b>{minAmount.toFixed(2)} RSD</b>
+          最低支付金额为 <b>{minAmount.toFixed(2)} RSD</b>
         </Typography>
         <Typography fontSize={14} sx={{ marginTop: 1 }}>
-          Maksimalni Iznos uplate je <b>220,000.00 RSD</b>
+          最高支付金额为 <b>220,000.00 RSD</b>
         </Typography>
 
         <Typography fontSize={12} sx={{ marginTop: 1 }}>
-          Podaci o narudžbini: Sve cene su sa uračunatim PDV-om i nema dodatnih
-          troškova
+          订单信息：所有价格均含增值税，无额外费用
         </Typography>
       </Box>
       <form onSubmit={formik.handleSubmit} style={{ width: "90%" }}>
@@ -270,7 +269,7 @@ const CreditCardPayPage: FC = () => {
             helperText={
               formik.touched.paymentValue && formik.errors.paymentValue
             }
-            label="Vrednost uplate"
+            label="支付金额"
             name="paymentValue"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
@@ -315,7 +314,7 @@ const CreditCardPayPage: FC = () => {
                   },
                 }}
               />
-              <Typography fontSize={13}>Nova Kartica</Typography>
+              <Typography fontSize={13}>新卡</Typography>
             </Box>
 
             <Box
@@ -328,7 +327,7 @@ const CreditCardPayPage: FC = () => {
                 // border: "1px solid red",
               }}
             >
-              <Typography fontSize={13}>Zapamti Karticu</Typography>
+              <Typography fontSize={13}>记住此卡</Typography>
               <Checkbox
                 name="rememberMe"
                 value={saveCardForFutureUse}
@@ -407,7 +406,7 @@ const CreditCardPayPage: FC = () => {
               }}
             />
             <Typography fontSize={14}>
-              <u>Prihvati uslove koriscenja</u>
+              <u>我接受使用条款</u>
             </Typography>
           </Box>
           <Button
@@ -423,7 +422,7 @@ const CreditCardPayPage: FC = () => {
             variant="contained"
             type="submit"
           >
-            {isLoading ? <CircularProgress /> : <b>Uplati</b>}
+            {isLoading ? <CircularProgress /> : <b>存款</b>}
           </Button>
         </Stack>
       </form>

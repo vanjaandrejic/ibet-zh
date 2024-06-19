@@ -69,7 +69,7 @@ const SearchPage: FC = () => {
       try {
         const response = await axios.get(
           // `https://www.365.rs/ibet/search/matchesSearch/${search}.json`,
-          `https://www.365.rs/restapi/offer/sr/search/${search}/mob?mobileVersion=2.30.12&locale=sr`,
+          `https://www.365.rs/restapi/offer/zh/search/${search}/mob?mobileVersion=2.30.12&locale=sr`,
           {
             // params: {
             //   mobileVersion: "2.30.12",

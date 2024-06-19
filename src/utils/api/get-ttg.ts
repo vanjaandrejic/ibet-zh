@@ -9,7 +9,7 @@ const fetchBetOptions = async (
 ) => {
   try {
     const response = await axios.get(
-      "https://ibet2.365.rs/restapi/offer/sr/ttg_lang",
+      "https://ibet2.365.rs/restapi/offer/zh/ttg_lang",
       {
         params: {
           mobileVersion: "2.32.10.5",

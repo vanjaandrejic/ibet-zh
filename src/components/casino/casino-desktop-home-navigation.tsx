@@ -61,7 +61,7 @@ const CasinoDesktopHomeNavigation: FC<{
 
   const navigationButtons = [
     {
-      name: "Slotovi",
+      name: "老虎机",
       componentName: "Slotovi",
       icon: SlotsIcon,
       selectedColor: "#FFC211",
@@ -72,7 +72,7 @@ const CasinoDesktopHomeNavigation: FC<{
       isBold: true,
     },
     {
-      name: "Live Dealer",
+      name: "真人荷官",
       componentName: "Live Dealer",
       icon: LiveDealerIcon,
       selectedColor: "#FFC211",
@@ -83,7 +83,7 @@ const CasinoDesktopHomeNavigation: FC<{
       isBold: true,
     },
     {
-      name: "Svi Provajderi",
+      name: "供应商",
       componentName: "SviProvajderi",
       icon: ProvidersIcon,
       selectedColor: "#FFC211",
@@ -94,7 +94,7 @@ const CasinoDesktopHomeNavigation: FC<{
       isBold: true,
     },
     {
-      name: "Virtuali",
+      name: "虚拟游戏",
       componentName: "Virtuals",
       icon: VirtualsDiceIcon,
       selectedColor: "#FFC211",
@@ -108,7 +108,7 @@ const CasinoDesktopHomeNavigation: FC<{
 
   const navigationSportButtons = [
     {
-      name: "Live",
+      name: "直播", // LIVE
       icon: LiveMarkIcon,
       defaultColor: "#0D0D17",
       defaultFill: "red",
@@ -116,7 +116,7 @@ const CasinoDesktopHomeNavigation: FC<{
       sportId: "S",
     },
     {
-      name: "Fudbal",
+      name: "足球", // football
       icon: FootballIcon,
       defaultColor: "#0D0D17",
       defaultFill: "white",
@@ -124,7 +124,7 @@ const CasinoDesktopHomeNavigation: FC<{
       sportId: "S",
     },
     {
-      name: "Košarka",
+      name: "篮球", // kosarka
       icon: BasketballIcon,
       defaultColor: "#0D0D17",
       defaultFill: "#FF5811",
@@ -132,7 +132,7 @@ const CasinoDesktopHomeNavigation: FC<{
       sportId: "B",
     },
     {
-      name: "Tenis",
+      name: "网球", // tennis
       icon: TennisIcon,
       defaultColor: "#0D0D17",
       defaultFill: "#DBFF00",
@@ -257,7 +257,8 @@ const CasinoDesktopHomeNavigation: FC<{
                 color: "black",
               }}
             >
-              <b>SPORT</b>
+              <b>体育</b>
+              {/* SPORT */}
             </Typography>
           </Box>
         </Box>
@@ -298,7 +299,9 @@ const CasinoDesktopHomeNavigation: FC<{
                 color: "black",
               }}
             >
-              <b>SLOT</b>
+              <b>老虎机</b>
+
+              {/* SLOT */}
             </Typography>
           </Box>
         </Box>
@@ -315,7 +318,8 @@ const CasinoDesktopHomeNavigation: FC<{
         }}
       >
         <Typography sx={{ mb: 1 }} fontSize={16}>
-          <b>SVE IGRE</b>
+          <b>所有游戏</b>
+          {/* SVE igre */}
         </Typography>
         {navigationButtons.map((item, index) => (
           <RoundGradientButton
@@ -394,7 +398,8 @@ const CasinoDesktopHomeNavigation: FC<{
         ))}
 
         <Typography sx={{ mt: 2, mb: 1 }} fontSize={16}>
-          <b>SPORT</b>
+          <b>体育</b>
+          {/* SPORT */}
         </Typography>
         {navigationSportButtons.map((item, index) => (
           <RoundGradientButton
@@ -464,7 +469,8 @@ const CasinoDesktopHomeNavigation: FC<{
           onClick={() => navigate("/sport")}
         >
           <ChevronRightIcon />
-          <Typography>Kompletna ponuda</Typography>
+          <Typography>完整优惠</Typography>
+          {/* kompletna ponuda */}
         </Button>
       </Box>
       <Box sx={{ width: "80%" }}>

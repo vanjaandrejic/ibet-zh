@@ -8,7 +8,7 @@ const fetchTopMatches = async (
 ) => {
   try {
     const response = await axios.get(
-      `https://ibet2.365.rs/restapi/offer/sr/top/mob`,
+      `https://ibet2.365.rs/restapi/offer/zh/top/mob`,
       {
         params: {
           sport: sport,

@@ -62,8 +62,8 @@ const TopNavigation: FC = () => {
     >
       <img
         height={60}
-        src="/logo.png"
-        style={{ marginLeft: isDesktop ? "7%" : -16 }}
+        src="/365ch.png"
+        style={{ marginLeft: isDesktop ? "8%" : 4 }}
         onClick={() => navigate("/")}
       ></img>
 
@@ -96,11 +96,11 @@ const TopNavigation: FC = () => {
             <MagicSearchIcon fill={"white"} />
             {isCasinoPage ? (
               <Typography fontSize={14} sx={{ marginLeft: 2 }}>
-                Pronađi svoju igru...
+                搜索你的游戏...
               </Typography>
             ) : (
               <Typography fontSize={14} sx={{ marginLeft: 2 }}>
-                Pronađi svoju ponudu...
+                搜索你的游戏...
               </Typography>
             )}
           </Box>
@@ -175,7 +175,8 @@ const TopNavigation: FC = () => {
                 color: "white",
               }}
             >
-              <b>Prijava</b>
+              <b>登录</b>
+              {/* prijavi se */}
             </Typography>
           </Button>
           <Button
@@ -195,7 +196,8 @@ const TopNavigation: FC = () => {
                 color: "white",
               }}
             >
-              <b>Registracija</b>
+              <b>注册</b>
+              {/* registracija */}
             </Typography>
           </Button>
         </Box>

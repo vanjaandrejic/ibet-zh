@@ -152,7 +152,7 @@ const UserLoyaltyCard: FC = () => {
             color: "white",
           }}
         >
-          <b>Preuzmi bonus</b>
+          <b>领取奖金</b>
         </Typography>
       </Button>
     </Box>

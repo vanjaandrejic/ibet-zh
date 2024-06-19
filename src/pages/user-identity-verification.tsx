@@ -65,11 +65,7 @@ const UserIdentityVerificationPage: FC = () => {
   const handleSubmit = async () => {
     setIsLoading(true);
 
-    if (
-      documentType === "Lična karta" &&
-      selectedFirstFile &&
-      selectedSecondFile
-    ) {
+    if (documentType === "身份证" && selectedFirstFile && selectedSecondFile) {
       // Dodato: Čitanje oba fajla
       const reader1 = new FileReader();
       const reader2 = new FileReader();
@@ -214,7 +210,7 @@ const UserIdentityVerificationPage: FC = () => {
         }}
       >
         <Typography fontSize={18}>
-          <b>Potvrda Identiteta</b>
+          <b>身份确认</b>
         </Typography>
         <IconButton onClick={() => navigate(-1)}>
           <CloseIcon />
@@ -240,20 +236,18 @@ const UserIdentityVerificationPage: FC = () => {
         }}
       >
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Tip Dokumenta</InputLabel>
+          <InputLabel id="demo-simple-select-label">文件类型</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={documentType}
-            label="Tip Dokumenta"
+            label="文件类型"
             onChange={handleDocumentChange}
           >
-            <MenuItem value={"Lična karta"}>Lična karta</MenuItem>
-            <MenuItem value={"Pasoš"}>Pasoš</MenuItem>
-            <MenuItem value={"Selfi"}>Selfi</MenuItem>
-            <MenuItem value={"Broj tekućeg računa"}>
-              Broj tekućeg računa
-            </MenuItem>
+            <MenuItem value={"Lična karta"}>身份证</MenuItem>
+            <MenuItem value={"Pasoš"}>护照</MenuItem>
+            <MenuItem value={"Selfi"}>自拍</MenuItem>
+            <MenuItem value={"Broj tekućeg računa"}>银行账户号码</MenuItem>
           </Select>
         </FormControl>
       </Box>
@@ -267,9 +261,7 @@ const UserIdentityVerificationPage: FC = () => {
           startIcon={<CloudUploadIcon />}
           sx={{ margin: 2, width: "80%" }}
         >
-          {documentType === "Lična karta"
-            ? "Dodaj Prednju Stranu"
-            : "Dodaj dokument"}
+          {documentType === "Lična karta" ? "Dodaj Prednju Stranu" : "添加文件"}
 
           <input
             type="file"
@@ -349,7 +341,7 @@ const UserIdentityVerificationPage: FC = () => {
           mb: 8,
         }}
       >
-        {isLoading ? <CircularProgress /> : <b>Pošalji</b>}
+        {isLoading ? <CircularProgress /> : <b>发送</b>}
       </Button>
     </Box>
   );

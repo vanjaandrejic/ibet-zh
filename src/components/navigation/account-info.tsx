@@ -98,7 +98,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
           }}
         >
           <Typography sx={{ color: "#2F3B4B" }}>
-            <b>Stanje</b>
+            <b>余额</b>
+            {/* stanje */}
           </Typography>
           <Typography>
             <b>{formatter.format(user.balance)}</b>
@@ -117,7 +118,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
           }}
         >
           <Typography sx={{ textTransform: "capitalize", color: "black" }}>
-            <b>Uplati</b>
+            <b>存款</b>
+            {/* uplati */}
           </Typography>
         </Button>
 
@@ -144,7 +146,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
             marginBottom: 1,
           }}
         >
-          <Typography fontSize={12}>Zlato</Typography>
+          <Typography fontSize={12}>我的金币</Typography>
+          {/* zlato */}
           <Typography fontSize={12}>{getFreebetBalance()} RSD</Typography>
           <Box
             sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
@@ -184,7 +187,7 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                 fontSize={14}
                 sx={{ marginLeft: 1.6, color: "#4B5E78" }}
               >
-                <b>Profil</b>
+                <b>个人资料</b>
               </Typography>
             </AccordionSummary>
             <AccordionDetails
@@ -234,7 +237,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                       },
                     }}
                   >
-                    <b>Promena lozinke</b>
+                    <b>修改密码</b>
+                    {/* promena lozinke */}
                   </Typography>
                 </Button>
 
@@ -268,7 +272,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                       },
                     }}
                   >
-                    <b>Transakcije</b>
+                    <b>交易记录</b>
+                    {/* transakcije */}
                   </Typography>
                 </Button>
                 {/* 
@@ -305,7 +310,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                       },
                     }}
                   >
-                    <b>Potvrda Identiteta</b>
+                    <b>身份确认</b>
+                    {/* potvrda identitea */}
                   </Typography>
                 </Button>
 
@@ -341,7 +347,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                 fontSize={14}
                 sx={{ marginLeft: 1.6, color: "#4B5E78" }}
               >
-                <b>Uplata - Isplata</b>
+                <b>存款 - 提款</b>
+                {/* uplata isplataa */}
               </Typography>
             </AccordionSummary>
             <AccordionDetails
@@ -379,7 +386,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                     },
                   }}
                 >
-                  <b>Uplata platnom karticom</b>
+                  <b>通过支付卡存款</b>
+                  {/* platnom karticom */}
                 </Typography>
               </Button>
               {/* <Button
@@ -417,7 +425,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                     },
                   }}
                 >
-                  <b>Isplata na tekući račun</b>
+                  <b>提款到银行账户</b>
+                  {/* tekuci */}
                 </Typography>
               </Button>
               <Button
@@ -447,7 +456,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                     },
                   }}
                 >
-                  <b>Isplata na uplatnom mestu</b>
+                  <b>在支付点提款</b>
+                  {/* uplatno mesto */}
                 </Typography>
               </Button>
             </AccordionDetails>
@@ -470,7 +480,9 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
               fontSize={14}
               sx={{ color: "#4B5E78", padding: "4px", marginLeft: 1 }}
             >
-              <b>Pomoć</b>
+              <b>帮助</b>
+
+              {/* pomoc */}
             </Typography>
           </Box>
           <Box
@@ -579,7 +591,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
             >
               <TicketIcon fill={"#2F3B4B"} />
               <Typography fontSize={12} sx={{ padding: "4px" }}>
-                Tiketi
+                票据
+                {/* tiketi */}
               </Typography>
             </Box>
             {/* <Box
@@ -618,7 +631,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
             >
               <PresentIcon color="#2F3B4B" />
               <Typography fontSize={12} sx={{ padding: "4px" }}>
-                Promocije
+                促销
+                {/* promocije */}
               </Typography>
             </Box>
           </Box>
@@ -666,7 +680,8 @@ const AccountInfo: FC<AccountInfoProps> = ({ user, setShowBox }) => {
                   },
                 }}
               >
-                <b>Izloguj se</b>
+                <b>促销</b>
+                {/* izloguj */}
               </Typography>
             </Button>
           </Box>

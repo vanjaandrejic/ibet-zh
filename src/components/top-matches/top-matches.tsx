@@ -83,7 +83,7 @@ const TopMatches: FC<{ sport: string }> = ({ sport }) => {
                     sx={{ color: "orange", marginRight: 1 }}
                   />
 
-                  <Typography fontSize={18}>Top Mečevi</Typography>
+                  <Typography fontSize={18}>热门比赛</Typography>
                 </>
               ) : null}
             </Box>

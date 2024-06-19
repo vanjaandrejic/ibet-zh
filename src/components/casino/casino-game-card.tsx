@@ -42,7 +42,6 @@ const CasinoGameCard: FC<CasinoGameCardProps> = ({
   setFilteredGames,
   setSearch,
 }) => {
-  console.log(game);
   const [modalOpen, setModalOpen] = useState(false);
   const [isFavoriteGame, setIsFavoriteGame] = useState<boolean>(false);
 

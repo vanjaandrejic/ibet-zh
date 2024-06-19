@@ -96,10 +96,10 @@ const TicketEvidenceItemDesktop: FC<TicketEvidenceItemProps> = ({
         ></Box>
         <Typography fontSize={14} sx={{ ml: 1 }}>
           {ticketInfo.status === 0
-            ? "U igri"
+            ? "正在游戏i"
             : ticketInfo.status === 1
-            ? "Dobitan"
-            : "Gubitan"}
+            ? "赢"
+            : "输"}
         </Typography>
       </Box>
       <Box sx={{ width: "14.28%" }}>

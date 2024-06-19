@@ -20,7 +20,7 @@ const MatchList: FC<MatchListProps> = ({ sportId, leagueId }) => {
     const fetchMatches = async () => {
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/sport/${sportId}/league/${leagueId}/mob?annex=0&${
+          `https://ibet2.365.rs/restapi/offer/zh/sport/${sportId}/league/${leagueId}/mob?annex=0&${
             timeParam ? timeParam : null
           }&mobileVersion=2.32.10.5&locale=sr`
         );

@@ -349,7 +349,8 @@ const RootPageDesktop: FC = () => {
                   }}
                 />
                 <Typography fontSize={12}>
-                  <b>REGISTRUJ SE</b>
+                  <b>注册</b>
+                  {/* registrujse */}
                 </Typography>
               </RoundGradientButton>
             </Box>
@@ -406,7 +407,8 @@ const RootPageDesktop: FC = () => {
                 }}
               >
                 <Typography fontSize={18}>
-                  <b>SPORT</b>
+                  <b>体育</b>
+                  {/* sport */}
                 </Typography>
                 <RoundGradientButton
                   gradientColors={["#08080F", "#171B31"]}
@@ -431,7 +433,8 @@ const RootPageDesktop: FC = () => {
                   }}
                 >
                   <Typography fontSize={12}>
-                    <b>IDI NA SPORT</b>
+                    <b>体育</b>
+                    {/* idi na sport */}
                   </Typography>
                   <ChevronRightIcon
                     sx={{
@@ -483,7 +486,8 @@ const RootPageDesktop: FC = () => {
                 }}
               >
                 <Typography fontSize={18}>
-                  <b>SLOT</b>
+                  <b>老虎机</b>
+                  {/* slot */}
                 </Typography>
                 <RoundGradientButton
                   gradientColors={["#08080F", "#171B31"]}
@@ -508,7 +512,8 @@ const RootPageDesktop: FC = () => {
                   }}
                 >
                   <Typography fontSize={12}>
-                    <b>IDI NA SLOT</b>
+                    <b>老虎机</b>
+                    {/* idi na slot */}
                   </Typography>
                   <ChevronRightIcon
                     sx={{
@@ -535,7 +540,8 @@ const RootPageDesktop: FC = () => {
                 sx={{ color: "orange", marginRight: 1 }}
               />
               <Typography>
-                <b>POPULARNO</b>
+                <b>热门</b>
+                {/* popularno */}
               </Typography>
             </Box>
             <Button
@@ -563,7 +569,8 @@ const RootPageDesktop: FC = () => {
                 marginLeft={0.4}
                 color={"white"}
               >
-                Pogledaj sve
+                所有
+                {/* pogledajsve */}
               </Typography>
             </Button>
           </Box>
@@ -593,7 +600,8 @@ const RootPageDesktop: FC = () => {
                 sx={{ color: "orange", marginRight: 1 }}
               />
               <Typography>
-                <b>PROVAJDERI</b>
+                <b>供应商</b>
+                {/* provajderi */}
               </Typography>
             </Box>
             {/* Slide left right */}
@@ -666,7 +674,8 @@ const RootPageDesktop: FC = () => {
                   marginLeft={0.4}
                   color={"white"}
                 >
-                  Pogledaj sve
+                  所有
+                  {/* pogledajsve */}
                 </Typography>
               </Button>
             </Box>
@@ -783,7 +792,8 @@ const RootPageDesktop: FC = () => {
                     }}
                   >
                     <Typography textTransform={"none"}>
-                      <b>Registracija</b>
+                      <b>注册</b>
+                      {/* registracija */}
                     </Typography>
                   </Button>
                   <Button
@@ -796,7 +806,8 @@ const RootPageDesktop: FC = () => {
                     onClick={() => navigate("/account")}
                   >
                     <Typography textTransform={"none"}>
-                      <b>Prijavi se</b>
+                      <b>登录</b>
+                      {/* prijavi se */}
                     </Typography>
                   </Button>
                 </Box>

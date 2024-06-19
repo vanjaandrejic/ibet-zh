@@ -181,7 +181,7 @@ const PayoutLocation: FC = () => {
         }}
       >
         <Typography fontSize={16}>
-          <b>Isplata na uplatnom mestu</b>
+          <b>在支付点提款</b>
         </Typography>
         <IconButton onClick={() => navigate(-1)}>
           <CloseIcon />
@@ -271,7 +271,7 @@ const PayoutLocation: FC = () => {
               helperText={
                 formik.touched.payOutValue && formik.errors.payOutValue
               }
-              label="Za isplatu"
+              label="用于支付"
               name="payOutValue"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -289,10 +289,10 @@ const PayoutLocation: FC = () => {
               }}
             >
               <Typography fontSize={12} sx={{ width: "32%" }}>
-                <b>Lokacija za isplatu</b>
+                <b>支付点位置</b>
               </Typography>
               <FormControl sx={{ width: "100%" }}>
-                <InputLabel id="demo-simple-select-label">Izaberi</InputLabel>
+                <InputLabel id="demo-simple-select-label">选择</InputLabel>
                 <Select
                   sx={{ width: "100%" }}
                   labelId="demo-simple-select-label"
@@ -322,7 +322,7 @@ const PayoutLocation: FC = () => {
               variant="contained"
               type="submit"
             >
-              <b>Isplati</b>
+              <b>提款</b>
             </Button>
           </Stack>
         </form>

@@ -111,26 +111,27 @@ const MainNavigation: FC<{
             <IconButton onClick={() => navigate("/live")}>
               <LiveIcon fill={getIconColor("/live")} />
             </IconButton>
-            <Typography fontSize={10} sx={{ marginTop: -2 }} color="white">
-              <b>Uživo</b>
+            <Typography fontSize={8} sx={{ marginTop: -2 }} color="white">
+              <b>直播</b>
+              {/* uzivo */}
             </Typography>
           </Box>
         </Grid>
         {[
-          { sport: "S", label: "Fudbal", icon: FootballIcon },
-          { sport: "B", label: "Košarka", icon: BasketballIcon },
-          { sport: "T", label: "Tennis", icon: TennisIcon },
-          { sport: "H", label: "Hokej", icon: HockeyIcon },
-          { sport: "HB", label: "Rukomet", icon: HandballIcon },
-          { sport: "V", label: "Odbojka", icon: VoleyballIcon },
-          { sport: "BB", label: "Bejzbol", icon: BaseballIcon },
-          { sport: "W", label: "Vaterpolo", icon: WaterpoloIcon },
-          { sport: "FS", label: "Futsal", icon: FootballIcon },
-          { sport: "TT", label: "S.Tenis", icon: TableTennisIcon },
-          { sport: "MM", label: "Mma", icon: MmaIcon },
-          { sport: "F1", label: "F 1", icon: F1Icon },
-          { sport: "BO", label: "Boks", icon: BoxIcon },
-          { sport: "RL", label: "Ragbi", icon: RugbiIcon },
+          { sport: "S", label: "足球", icon: FootballIcon },
+          { sport: "B", label: "篮球", icon: BasketballIcon },
+          { sport: "T", label: "网球", icon: TennisIcon },
+          { sport: "H", label: "曲棍球", icon: HockeyIcon },
+          { sport: "HB", label: "手球", icon: HandballIcon },
+          { sport: "V", label: "排球", icon: VoleyballIcon },
+          { sport: "BB", label: "棒球", icon: BaseballIcon },
+          { sport: "W", label: "水球", icon: WaterpoloIcon },
+          { sport: "FS", label: "室内五人制足球", icon: FootballIcon },
+          { sport: "TT", label: "乒乓球", icon: TableTennisIcon },
+          { sport: "MM", label: "综合格斗", icon: MmaIcon },
+          { sport: "F1", label: "一级方程式", icon: F1Icon },
+          { sport: "BO", label: "拳击", icon: BoxIcon },
+          { sport: "RL", label: "橄榄球", icon: RugbiIcon },
         ].map((item) => (
           <Grid item key={item.sport}>
             <Box
@@ -155,11 +156,7 @@ const MainNavigation: FC<{
                   }
                 />
               </IconButton>
-              <Typography
-                fontSize={10}
-                sx={{ marginTop: -0.2 }}
-                color={"white"}
-              >
+              <Typography fontSize={8} sx={{ marginTop: -0.2 }} color={"white"}>
                 <b>{item.label}</b>
               </Typography>
             </Box>

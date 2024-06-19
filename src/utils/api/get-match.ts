@@ -7,7 +7,7 @@ const getMatch = async (
 ) => {
   try {
     const response = await axios.get(
-      `https://ibet2.365.rs/restapi/offer/sr/match/${matchId}`,
+      `https://ibet2.365.rs/restapi/offer/zh/match/${matchId}`,
       {
         params: {
           mobileVersion: "2.27.33",

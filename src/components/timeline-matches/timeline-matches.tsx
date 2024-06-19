@@ -93,11 +93,11 @@ const TimelineMatches: FC<{ sportId: string | undefined }> = ({ sportId }) => {
           marginTop: -1,
         }}
       >
-        <Typography onClick={() => handleSliderChange(1)}>1h</Typography>
-        <Typography onClick={() => handleSliderChange(2)}>3h</Typography>
-        <Typography onClick={() => handleSliderChange(3)}>Danas</Typography>
-        <Typography onClick={() => handleSliderChange(4)}>3d</Typography>
-        <Typography onClick={() => handleSliderChange(5)}>Sve</Typography>
+        <Typography onClick={() => handleSliderChange(1)}>1小时</Typography>
+        <Typography onClick={() => handleSliderChange(2)}>3小时</Typography>
+        <Typography onClick={() => handleSliderChange(3)}>今天</Typography>
+        <Typography onClick={() => handleSliderChange(4)}>3天</Typography>
+        <Typography onClick={() => handleSliderChange(5)}>全部</Typography>
       </Box>
       {isDesktop ? (
         <Box mt={2}>
@@ -182,7 +182,7 @@ const TimelineMatches: FC<{ sportId: string | undefined }> = ({ sportId }) => {
                   id="panel1-header"
                   sx={{ backgroundColor: "#0D0D19" }}
                 >
-                  Kompletna Ponuda
+                  完整优惠
                 </AccordionSummary>
                 <AccordionDetails
                   sx={{ backgroundColor: "#0D0D19", width: "100%" }}

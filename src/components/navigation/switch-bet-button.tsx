@@ -65,7 +65,8 @@ const SwitchBetButton: FC = () => {
               color: isCasinoPage ? "white" : "black",
             }}
           >
-            <b>SPORT</b>
+            <b>体育</b>
+            {/* sport */}
           </Typography>
         </Box>
       </Box>
@@ -102,7 +103,8 @@ const SwitchBetButton: FC = () => {
             color: isCasinoPage ? "black" : "white",
           }}
         >
-          <b>SLOT</b>
+          <b>老虎机</b>
+          {/* slot */}
         </Typography>
       </Box>
     </Box>

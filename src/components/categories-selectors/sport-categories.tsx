@@ -25,7 +25,7 @@ const SportCategories: FC = () => {
     const fetchSports = async () => {
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/categories/s?&${
+          `https://ibet2.365.rs/restapi/offer/zh/categories/s?&${
             timeParam ? timeParam : null
           }`,
           {
@@ -36,6 +36,8 @@ const SportCategories: FC = () => {
           }
         );
         setSports(response.data.categories);
+
+        console.log(response.data);
       } catch (error) {
         console.error("Error:", error);
       }

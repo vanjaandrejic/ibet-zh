@@ -256,7 +256,8 @@ const RootPage: FC = () => {
             }}
           >
             <Typography fontSize={18}>
-              <b>SPORT</b>
+              <b>体育</b>
+              {/* sport */}
             </Typography>
             <RoundGradientButton
               gradientColors={["#08080F", "#171B31"]}
@@ -281,7 +282,8 @@ const RootPage: FC = () => {
               }}
             >
               <Typography fontSize={12}>
-                <b>SPORT</b>
+                <b>体育</b>
+                {/* sport */}
               </Typography>
               <ChevronRightIcon
                 sx={{
@@ -333,7 +335,8 @@ const RootPage: FC = () => {
             }}
           >
             <Typography fontSize={18}>
-              <b>SLOT</b>
+              <b>老虎机</b>
+              {/* slot */}
             </Typography>
             <RoundGradientButton
               gradientColors={["#08080F", "#171B31"]}
@@ -358,7 +361,8 @@ const RootPage: FC = () => {
               }}
             >
               <Typography fontSize={12}>
-                <b>SLOT</b>
+                <b>老虎机</b>
+                {/* slot */}
               </Typography>
               <ChevronRightIcon
                 sx={{
@@ -380,7 +384,8 @@ const RootPage: FC = () => {
         }}
       >
         <Typography>
-          <b>POPULARNO</b>
+          <b>热门</b>
+          {/* popularno */}
         </Typography>
       </Box>
 
@@ -407,7 +412,8 @@ const RootPage: FC = () => {
         }}
       >
         <Typography>
-          <b>PROVAJDERI</b>
+          <b>供应商</b>
+          {/* provajderi */}
         </Typography>
       </Box>
 
@@ -473,7 +479,8 @@ const RootPage: FC = () => {
               onClick={() => navigate("/registration")}
             >
               <Typography textTransform={"none"}>
-                <b>Registracija</b>
+                <b>注册</b>
+                {/* registracija */}
               </Typography>
             </Button>
             <Button
@@ -482,7 +489,8 @@ const RootPage: FC = () => {
               onClick={() => navigate("/account")}
             >
               <Typography textTransform={"none"}>
-                <b>Prijavi se</b>
+                <b>登录</b>
+                {/* prijavise */}
               </Typography>
             </Button>
           </Box>

@@ -6,7 +6,7 @@ const getBetPickGroupPositions = async (
 ) => {
   try {
     const response = await axios.get(
-      "https://ibet2.365.rs/restapi/offer/sr/bp",
+      "https://ibet2.365.rs/restapi/offer/zh/bp",
       {
         params: {
           mobileVersion: "2.27.33",

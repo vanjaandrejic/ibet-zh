@@ -74,7 +74,8 @@ const ChangePasswordPage: FC = () => {
         }}
       >
         <Typography fontSize={16} ml={1}>
-          <b>Promena lozinke</b>
+          <b>修改密码</b>
+          {/* promena lozinke */}
         </Typography>
         <IconButton onClick={() => navigate(-1)}>
           <CloseIcon />
@@ -92,7 +93,7 @@ const ChangePasswordPage: FC = () => {
                 ? formik.errors.password // If it's a string, use it directly
                 : null // If it's not a string, provide an alternative value (e.g., null)
             }
-            label="Trenutna Lozinka"
+            label="当前密码"
             name="password"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
@@ -109,7 +110,7 @@ const ChangePasswordPage: FC = () => {
                 ? formik.errors.newPassword // If it's a string, use it directly
                 : null // If it's not a string, provide an alternative value (e.g., null)
             }
-            label="Unesite novu lozinku"
+            label="输入新密码"
             name="newPassword"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
@@ -128,7 +129,7 @@ const ChangePasswordPage: FC = () => {
                 ? formik.errors.reNewPassword // If it's a string, use it directly
                 : null // If it's not a string, provide an alternative value (e.g., null)
             }
-            label="Potvrdite novu lozinku"
+            label="确认新密码"
             name="reNewPassword"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
@@ -148,7 +149,7 @@ const ChangePasswordPage: FC = () => {
             variant="contained"
             disabled={!formik.isValid || !formik.dirty}
           >
-            {isLoading ? <CircularProgress size={24} /> : <b>Sačuvaj</b>}
+            {isLoading ? <CircularProgress size={24} /> : <b>保存</b>}
           </Button>
         </Stack>
       </form>

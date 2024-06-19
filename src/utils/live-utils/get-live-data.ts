@@ -15,7 +15,7 @@ export const getLiveData = (
 ) => {
   const loadLiveInit = () => {
     const initEventSource = new EventSource(
-      "https://ibet2.365.rs/live/events/sr?lastInitId=" + lastInitRef.current
+      "https://ibet2.365.rs/live/events/zh?lastInitId=" + lastInitRef.current
     );
 
     initEventSource.addEventListener("message", (message: MessageEvent) => {
@@ -72,7 +72,7 @@ export const getLiveData = (
 
   const subscribeOnLiveEvents = () => {
     const subscribeEventSource = new EventSource(
-      "https://ibet2.365.rs/live/subscribe/sr?lastInitId=" + lastInitRef.current
+      "https://ibet2.365.rs/live/subscribe/zh?lastInitId=" + lastInitRef.current
     );
 
     subscribeEventSource.onerror = () => {

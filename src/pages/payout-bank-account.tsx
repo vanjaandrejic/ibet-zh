@@ -138,7 +138,7 @@ const PayoutBankAccount: FC = () => {
         }}
       >
         <Typography fontSize={16}>
-          <b>Isplata na tekući račun</b>
+          <b>支付到银行账户</b>
         </Typography>
 
         <IconButton onClick={() => navigate(-1)}>
@@ -156,8 +156,7 @@ const PayoutBankAccount: FC = () => {
         }}
       >
         <Typography fontSize={12}>
-          Unesite željeni iznos za isplatu. Zahtev za isplatu je moguć ukoliko
-          nema aktuelnih zahteva (nema rezervisanih sredstava)
+          请输入所需的提款金额。支付请求在没有当前请求（无预留资金）的情况下是可能的
         </Typography>
       </Box>
       {user?.reserved && user?.reserved > 0 ? (
@@ -175,7 +174,7 @@ const PayoutBankAccount: FC = () => {
         >
           <Typography>Zahtev za isplatu je kreiran!</Typography>
           <Typography>
-            Za isplatu <b>{user.reserved.toFixed(2)} RSD</b>
+            用于支付 <b>{user.reserved.toFixed(2)} RSD</b>
           </Typography>
           <Button
             size="large"
@@ -205,7 +204,7 @@ const PayoutBankAccount: FC = () => {
               helperText={
                 formik.touched.paymentValue && formik.errors.paymentValue
               }
-              label="Za isplatu"
+              label="用于支付"
               name="paymentValue"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -222,7 +221,7 @@ const PayoutBankAccount: FC = () => {
               helperText={
                 formik.touched.bankAccount && formik.errors.bankAccount
               }
-              label="Tekući račun"
+              label="银行账户"
               name="bankAccount"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -240,7 +239,7 @@ const PayoutBankAccount: FC = () => {
               variant="contained"
               type="submit"
             >
-              <b>Isplati</b>
+              <b>提款</b>
             </Button>
           </Stack>
         </form>

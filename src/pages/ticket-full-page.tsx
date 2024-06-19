@@ -213,7 +213,7 @@ const TicketFullPage: FC = () => {
           }}
         >
           <Typography>
-            <b>Broj tiketa</b>
+            <b>票据号码</b>
           </Typography>
           <Box
             sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}

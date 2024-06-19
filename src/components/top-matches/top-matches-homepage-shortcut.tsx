@@ -122,7 +122,8 @@ const TopMatchesHomepageShortcut: FC<{ sport: string }> = ({ sport }) => {
               marginLeft={0.4}
               color={"white"}
             >
-              Pogledaj sve
+              所有
+              {/* pogledajsve */}
             </Typography>
           </Button>
         </Box>

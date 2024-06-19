@@ -135,15 +135,15 @@ const TicketsEvidencePageDesktop: FC = () => {
           }}
         >
           {[
-            { pathValue: "/user-played-tickets", label: "Odigrani tiketi" },
-            { pathValue: "/user-transactions", label: "Transakcije" },
-            { pathValue: "/payment-card", label: "Uplata" },
-            { pathValue: "/payment-card", label: "Isplata na račun" },
-            { pathValue: "/payment-card", label: "Isplata na uplatnom mestu" },
-            { pathValue: "/change-password", label: "Izmena lozinke" },
+            { pathValue: "/user-played-tickets", label: "已玩票据" },
+            { pathValue: "/user-transactions", label: "交易记录" },
+            { pathValue: "/payment-card", label: "存款" },
+            { pathValue: "/payment-card", label: "提款到银行账户" },
+            { pathValue: "/payment-card", label: "在支付点提款" },
+            { pathValue: "/change-password", label: "修改密码" },
             {
               pathValue: "/user-identitiy-verification",
-              label: "Potvrda identiteta",
+              label: "身份确认",
             },
           ].map((button, index) => (
             <Button
@@ -254,10 +254,10 @@ const TicketsEvidencePageDesktop: FC = () => {
             }}
           >
             {[
-              { key: null, value: null, label: "Svi" },
-              { key: "won", value: "WON", label: "Dobitni" },
-              { key: "loss", value: "LOSS", label: "Gubitni" },
-              { key: "active", value: "active", label: "Otvoreni" },
+              { key: null, value: null, label: "所有" },
+              { key: "won", value: "WON", label: "盈利" },
+              { key: "loss", value: "LOSS", label: "亏损" },
+              { key: "active", value: "active", label: "未结" },
             ].map((button, index) => (
               <Button
                 key={index}
@@ -306,26 +306,26 @@ const TicketsEvidencePageDesktop: FC = () => {
               }}
             >
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Broj tiketa</Typography>
+                <Typography fontSize={12}>票据号码</Typography>
               </Box>
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Datum/Vreme</Typography>
+                <Typography fontSize={12}>日期/时间</Typography>
               </Box>
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Uplata</Typography>
+                <Typography fontSize={12}>支付</Typography>
               </Box>
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Moguca isplata</Typography>
+                <Typography fontSize={12}>可能赢得</Typography>
               </Box>
 
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Dobitak</Typography>
+                <Typography fontSize={12}>奖金</Typography>
               </Box>
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Status tiketa</Typography>
+                <Typography fontSize={12}>票据状态</Typography>
               </Box>
               <Box sx={{ width: "14.28%" }}>
-                <Typography fontSize={12}>Broj parova</Typography>
+                <Typography fontSize={12}>配对数量</Typography>
               </Box>
             </Box>
             {infoTickets
@@ -357,7 +357,7 @@ const TicketsEvidencePageDesktop: FC = () => {
                 justifyContent: "space-between",
               }}
             >
-              <Typography fontSize={14}>Stanje</Typography>
+              <Typography fontSize={14}>余额</Typography>
               <Typography fontSize={14}>
                 <b>{user?.balance?.toFixed(2)} RSD</b>
               </Typography>

@@ -27,7 +27,7 @@ const SportCategoriesListItem: FC<SportCategoriesListItemProps> = ({
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/categories/sport/${sportId}/group/${leagueId}/l?&${
+          `https://ibet2.365.rs/restapi/offer/zh/categories/sport/${sportId}/group/${leagueId}/l?&${
             timeParam ? timeParam : null
           }`,
           {
