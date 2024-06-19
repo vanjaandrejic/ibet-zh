@@ -219,19 +219,8 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
   // ];
 
   const navigationButtons = [
-    // {
-    //   name: "Početna",
-    //   componentName: "Početna",
-    //   icon: HomePageIcon,
-    //   selectedColor: "#FFC211",
-    //   defaultColor: "#0D0D17",
-    //   selectedFill: "black",
-    //   defaultFill: "red",
-    //   fontSize: 16,
-    //   isBold: true,
-    // },
     {
-      name: "Slotovi",
+      name: "老虎机",
       componentName: "Slotovi",
       icon: SlotsIcon,
       selectedColor: "#FFC211",
@@ -242,7 +231,7 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
       isBold: true,
     },
     {
-      name: "Live Dealer",
+      name: "真人荷官",
       componentName: "Live Dealer",
       icon: LiveDealerIcon,
       selectedColor: "#FFC211",
@@ -253,7 +242,7 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
       isBold: true,
     },
     {
-      name: "Svi Provajderi",
+      name: "供应商",
       componentName: "SviProvajderi",
       icon: ProvidersIcon,
       selectedColor: "#FFC211",
@@ -264,7 +253,7 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
       isBold: true,
     },
     {
-      name: "Virtuali",
+      name: "虚拟游戏",
       componentName: "Virtuals",
       icon: VirtualsDiceIcon,
       selectedColor: "#FFC211",
@@ -352,7 +341,7 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
           }}
         >
           <Typography sx={{ mb: 1 }} fontSize={16}>
-            <b>SVE IGRE</b>
+            <b>所有</b>
           </Typography>
           {navigationButtons.map((item, index) => (
             <RoundGradientButton
@@ -497,7 +486,7 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
               width={"80%"}
             >
               {/* {item.name} */}
-              {selectedComponent === "Početna" ? <b>Početna</b> : "Početna"}
+              {selectedComponent === "Početna" ? <b>首页</b> : "首页"}
             </Typography>
           </RoundGradientButton>
           <RoundGradientButton
@@ -538,7 +527,7 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
               width={"80%"}
             >
               {/* {item.name} */}
-              Promocije
+              促销
             </Typography>
           </RoundGradientButton>
           <RoundGradientButton
@@ -586,9 +575,9 @@ const CasinoDesktopHome: FC<CasinoDesktopHomeProps> = ({
             >
               {/* {item.name} */}
               {selectedComponent === "Omiljeno" ? (
-                <b>Omiljene igre</b>
+                <b>最喜欢的游戏</b>
               ) : (
-                "Omiljene igre"
+                "最喜欢的游戏"
               )}
             </Typography>
           </RoundGradientButton>

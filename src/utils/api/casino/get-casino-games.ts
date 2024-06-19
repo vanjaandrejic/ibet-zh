@@ -13,7 +13,7 @@ export async function getLobbyData(): Promise<CasinoResponseData> {
       deviceType: "mobile",
       ignoreRoomGroupingByTag: true,
       mobileVersion: "2.27.49",
-      locale: "sr",
+      locale: "zh",
     };
 
     const response = await axios.get(

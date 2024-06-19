@@ -179,7 +179,7 @@ const CasinoDesktopSearch: FC<CasinoDesktopSearchProps> = ({
         gradientColors={["#08080F", "#171B31"]}
         variant="standard"
         size="small"
-        placeholder="Pretraži svoju igru..."
+        placeholder="搜索你的游戏..."
         onChange={handleSearchChange}
         InputProps={{
           disableUnderline: true,

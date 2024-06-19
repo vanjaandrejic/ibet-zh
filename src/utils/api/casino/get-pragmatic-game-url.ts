@@ -17,7 +17,7 @@ const getPragmaticGameUrl = async (gameId: string, demo: boolean) => {
     };
 
     const response = await axios.post(
-      "https://ibet2.365.rs/ibet/casino/pragmatic/launchUrl.json?mobileVersion=2.27.49&locale=sr",
+      "https://ibet2.365.rs/ibet/casino/pragmatic/launchUrl.json?mobileVersion=2.27.49&locale=zh",
       formData.toString(), // Convert formData to string
       {
         headers: headers,

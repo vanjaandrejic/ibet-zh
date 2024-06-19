@@ -14,16 +14,13 @@ import {
 import { toast } from "react-toastify";
 
 const validationSchema = yup.object().shape({
-  email: yup
-    .string()
-    .email("Unesite validan email")
-    .required("Email je obavezan"),
-  firstname: yup.string().required("Ime je obavezno"),
-  lastname: yup.string().required("Prezime je obavezno"),
+  email: yup.string().email("Unesite validan email").required("我不是政府官员"),
+  firstname: yup.string().required("名字是必填项"),
+  lastname: yup.string().required("姓氏是必填项"),
   notMinor: yup
     .boolean()
     .oneOf([true], "Potrebno je potvrditi da niste maloletni"),
-  password: yup.string().required("Lozinka je obavezna"),
+  password: yup.string().required("密码是必填项"),
   politician: yup
     .boolean()
     .oneOf([true], "Potrebno je potvrditi da niste Državni funkcioner"),
@@ -39,7 +36,7 @@ const validationSchema = yup.object().shape({
     .oneOf([true], "Potrebno je prihvatiti uslove korišćenja"),
   username: yup
     .string()
-    .required("Korisničko ime je obavezno")
+    .required("名字是必填项")
     .min(6, "Mora sadržati najmanje 6 karaktera"),
   affiliate: yup.string(),
 });
@@ -111,7 +108,7 @@ const RegistrationPageDesktop: FC = () => {
       }}
     >
       <Typography fontSize={24} sx={{ width: "50%" }}>
-        <b>Registracija</b>
+        <b>注册</b>
       </Typography>
       <form noValidate onSubmit={formik.handleSubmit}>
         <Stack
@@ -141,7 +138,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.firstname // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Ime"
+                label="名字"
                 name="firstname"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -159,7 +156,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.lastname // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Prezime"
+                label="姓氏"
                 name="lastname"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -178,7 +175,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.username // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Korisničko ime"
+                label="用户名"
                 name="username"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -197,7 +194,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.email // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Email"
+                label="电子邮件"
                 name="email"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -218,7 +215,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.reEmail // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Potvrdite e-mail"
+                label="确认电子邮件"
                 name="reEmail"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -237,7 +234,7 @@ const RegistrationPageDesktop: FC = () => {
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
                 fullWidth
-                label="Lozinka"
+                label="密码"
                 name="password"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -258,7 +255,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.rePassword // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Potvrda Lozinke"
+                label="确认密码"
                 name="rePassword"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -275,7 +272,7 @@ const RegistrationPageDesktop: FC = () => {
                     ? formik.errors.affiliate // If it's a string, use it directly
                     : null // If it's not a string, provide an alternative value (e.g., null)
                 }
-                label="Promo kod"
+                label="促销代码"
                 name="affiliate"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -320,7 +317,7 @@ const RegistrationPageDesktop: FC = () => {
                 }}
               >
                 <Typography fontSize={13} sx={{ textDecoration: "underline" }}>
-                  Prihvatam opšte uslove korišćenja
+                  我接受使用条款
                 </Typography>
                 <Checkbox
                   name="termsAndConditions"
@@ -388,7 +385,7 @@ const RegistrationPageDesktop: FC = () => {
                 }}
               >
                 <Typography fontSize={13} sx={{ textDecoration: "underline" }}>
-                  Nisam državni funkcioner
+                  我不是政府官员
                 </Typography>
                 <Checkbox
                   name="politician"
@@ -426,7 +423,7 @@ const RegistrationPageDesktop: FC = () => {
                 }}
               >
                 <Typography fontSize={13} sx={{ textDecoration: "underline" }}>
-                  Da, imam više od 18 godina
+                  是的，我已满18岁
                 </Typography>
                 <Checkbox
                   name="notMinor"
@@ -458,7 +455,7 @@ const RegistrationPageDesktop: FC = () => {
             variant="contained"
             disabled={!formik.isValid || !formik.dirty}
           >
-            {isLoading ? <CircularProgress size={24} /> : <b>Potvrdi</b>}
+            {isLoading ? <CircularProgress size={24} /> : <b>确认</b>}
           </Button>
         </Stack>
       </form>

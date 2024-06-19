@@ -90,7 +90,7 @@ const BotNavigation: FC = () => {
         >
           <TicketIcon fill={"#FFC211"} width={"1.2rem"} />
           <Typography fontSize={12} sx={{ color: "white", ml: 1 }}>
-            Tiketi
+            票据
           </Typography>
         </Button>
       ) : null}
@@ -173,7 +173,7 @@ const BotNavigation: FC = () => {
                 color: isDesktop ? "white" : "#697484",
               }}
             >
-              Uplata
+              支付
             </Typography>
           </Button>
           <Button
@@ -200,7 +200,7 @@ const BotNavigation: FC = () => {
                 color: isDesktop ? "white" : "#697484",
               }}
             >
-              Isplata
+              提款
             </Typography>
           </Button>
         </>
@@ -225,7 +225,7 @@ const BotNavigation: FC = () => {
                 color: isDesktop ? "white" : "#697484",
               }}
             >
-              Vremenska
+              时间表
             </Typography>
           </Button>
           <IconButton
@@ -245,7 +245,7 @@ const BotNavigation: FC = () => {
                 color: isDesktop ? "white" : "#697484",
               }}
             >
-              KVOTE
+              赔率
             </Typography>
           </IconButton>
         </>
@@ -268,7 +268,7 @@ const BotNavigation: FC = () => {
               color: isDesktop ? "white" : "#697484",
             }}
           >
-            sport
+            体育
           </Typography>
         </Button>
       ) : (
@@ -288,7 +288,7 @@ const BotNavigation: FC = () => {
               color: isDesktop ? "white" : "#697484",
             }}
           >
-            Slot
+            老虎机
           </Typography>
         </Button>
       )}

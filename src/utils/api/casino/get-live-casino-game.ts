@@ -12,7 +12,7 @@ export async function getLiveGamesData(): Promise<any> {
       deviceType: "mobile",
       ignoreRoomGroupingByTag: true,
       mobileVersion: "2.27.49",
-      locale: "sr",
+      locale: "zh",
     };
 
     const response = await axios.get(

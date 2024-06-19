@@ -88,8 +88,8 @@ const LastMinutePage: FC = () => {
   const dayAfterTomorrowDate = getFutureDate(2);
 
   const timeButtons = [
-    { id: 0, title: "Danas", value: `date=${formattedDate}` },
-    { id: 1, title: "Sutra", value: `date=${tomorrowDate}` },
+    { id: 0, title: "今天", value: `date=${formattedDate}` },
+    { id: 1, title: "明天", value: `date=${tomorrowDate}` },
     {
       id: 2,
       title: `${dayAfterTomorrowDate.split(".")[0]}.${
@@ -105,7 +105,7 @@ const LastMinutePage: FC = () => {
     const fetchSports = async () => {
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/categories/oddrange/s?annex=0&${timeParam}`,
+          `https://ibet2.365.rs/restapi/offer/zh/categories/oddrange/s?annex=0&${timeParam}`,
           {
             params: {
               // toOdd: oddValue,
@@ -128,7 +128,7 @@ const LastMinutePage: FC = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/oddrange/${sportId}/mob?annex=0&${timeParam}`,
+          `https://ibet2.365.rs/restapi/offer/zh/oddrange/${sportId}/mob?annex=0&${timeParam}`,
           {
             params: {
               // toOdd: oddValue,
@@ -172,7 +172,7 @@ const LastMinutePage: FC = () => {
         <IconButton onClick={() => navigate(-1)}>
           <ArrowBack />
         </IconButton>
-        Vremenska Ponuda
+        时间表
       </Box>
 
       <Box

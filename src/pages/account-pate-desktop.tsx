@@ -15,10 +15,10 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const validationSchema = yup.object().shape({
-  j_password: yup.string().required("Lozinka je obavezna"),
+  j_password: yup.string().required("密码是必填项"),
   j_username: yup
     .string()
-    .required("Korisničko ime je obavezno")
+    .required("名字是必填项")
     .min(6, "Mora sadržati najmanje 6 karaktera"),
 });
 
@@ -94,7 +94,7 @@ const AccountPageDesktop: FC = () => {
         }}
       >
         <Typography fontSize={20}>
-          <b>Prijavi se</b>
+          <b>登录</b>
         </Typography>
         <form noValidate onSubmit={formik.handleSubmit}>
           <Stack gap={2} alignItems="center" marginTop={2}>
@@ -108,7 +108,7 @@ const AccountPageDesktop: FC = () => {
                   ? formik.errors.j_username // If it's a string, use it directly
                   : null // If it's not a string, provide an alternative value (e.g., null)
               }
-              label="Korisničko ime"
+              label="用户名"
               name="j_username"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -125,7 +125,7 @@ const AccountPageDesktop: FC = () => {
                   ? formik.errors.j_password // If it's a string, use it directly
                   : null // If it's not a string, provide an alternative value (e.g., null)
               }
-              label="Lozinka"
+              label="密码"
               name="j_password"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -169,7 +169,7 @@ const AccountPageDesktop: FC = () => {
                       },
                     }}
                   />
-                  <Typography fontSize={13}>Zapamti me</Typography>
+                  <Typography fontSize={13}>记住我</Typography>
                 </Box>
                 <Button
                   variant={"text"}
@@ -180,7 +180,7 @@ const AccountPageDesktop: FC = () => {
                   }}
                   onClick={() => navigate("/reset-password")}
                 >
-                  <Typography fontSize={13}>Izgubljena lozinka?</Typography>
+                  <Typography fontSize={13}>忘记密码?</Typography>
                 </Button>
               </Box>
             </Box>
@@ -196,7 +196,7 @@ const AccountPageDesktop: FC = () => {
               variant="contained"
               disabled={!formik.isValid || !formik.dirty}
             >
-              {isLoading ? <CircularProgress size={24} /> : <b>Prijavi se</b>}
+              {isLoading ? <CircularProgress size={24} /> : <b>登录</b>}
             </Button>
             <Button
               size="large"
@@ -208,7 +208,7 @@ const AccountPageDesktop: FC = () => {
               variant="contained"
               onClick={() => navigate("/registration")}
             >
-              <b>Registracija</b>
+              <b>注册</b>
             </Button>
           </Stack>
         </form>

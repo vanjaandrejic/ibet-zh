@@ -60,7 +60,7 @@ const TicketInfo: FC<{
               style={{ fontSize: 40, color: "black", marginLeft: 14 }}
             />
             <Typography fontSize={16} color="black">
-              <b>Tiket</b>
+              <b>票据</b>
             </Typography>
           </Box>
           <IconButton

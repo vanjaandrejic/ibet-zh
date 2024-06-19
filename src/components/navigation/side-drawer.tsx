@@ -65,7 +65,7 @@ const SideMenuDrawer: React.FC = () => {
 
   const navigationButtons = [
     {
-      name: "Slotovi",
+      name: "老虎机",
       componentName: "Slotovi",
       icon: SlotsIcon,
       selectedColor: "#FFC211",
@@ -76,7 +76,7 @@ const SideMenuDrawer: React.FC = () => {
       isBold: true,
     },
     {
-      name: "Live Dealer",
+      name: "真人荷官",
       componentName: "Live Dealer",
       icon: LiveDealerIcon,
       selectedColor: "#FFC211",
@@ -87,7 +87,7 @@ const SideMenuDrawer: React.FC = () => {
       isBold: true,
     },
     {
-      name: "Svi Provajderi",
+      name: "热门",
       componentName: "SviProvajderi",
       icon: ProvidersIcon,
       selectedColor: "#FFC211",
@@ -98,7 +98,7 @@ const SideMenuDrawer: React.FC = () => {
       isBold: true,
     },
     {
-      name: "Virtuali",
+      name: "虚拟游戏",
       componentName: "Virtuals",
       icon: VirtualsDiceIcon,
       selectedColor: "#FFC211",
@@ -272,7 +272,7 @@ const SideMenuDrawer: React.FC = () => {
                   width={"80%"}
                 >
                   {/* {item.name} */}
-                  {selectedComponent === "Početna" ? <b>Početna</b> : "Početna"}
+                  {selectedComponent === "Početna" ? <b>首页</b> : "首页"}
                 </Typography>
               </RoundGradientButton>
               <RoundGradientButton
@@ -317,7 +317,7 @@ const SideMenuDrawer: React.FC = () => {
                   width={"80%"}
                 >
                   {/* {item.name} */}
-                  Promocije
+                  促销
                 </Typography>
               </RoundGradientButton>
               <RoundGradientButton
@@ -366,9 +366,9 @@ const SideMenuDrawer: React.FC = () => {
                 >
                   {/* {item.name} */}
                   {selectedComponent === "Omiljeno" ? (
-                    <b>Omiljene igre</b>
+                    <b>最喜欢的游戏</b>
                   ) : (
-                    "Omiljene igre"
+                    "最喜欢的游戏"
                   )}
                 </Typography>
               </RoundGradientButton>
@@ -444,7 +444,7 @@ const SideMenuDrawer: React.FC = () => {
           >
             <SideMenuIcon />
             <Typography fontSize={8} sx={{ marginTop: 1 }}>
-              Meni
+              菜单
             </Typography>
           </Button>
           <SwipeableDrawer

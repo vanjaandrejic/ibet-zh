@@ -119,7 +119,7 @@ const CasinoHomeComponent: FC<CasinoHomeComponentProps> = ({
           >
             <MagicSearchIcon fill={"white"} />
             <Typography fontSize={14} sx={{ marginLeft: 2 }}>
-              Pronađi svoju igru...
+              搜索你的游戏...
             </Typography>
           </Box>
         </Button>
@@ -149,7 +149,7 @@ const CasinoHomeComponent: FC<CasinoHomeComponentProps> = ({
             sx={{ color: "orange", marginRight: 1 }}
           ></LocalFireDepartmentIcon>
           <Typography fontSize={16}>
-            <b>POPULARNO</b>
+            <b>热门</b>
           </Typography>
         </Box>
         {/* <Button
@@ -201,7 +201,7 @@ const CasinoHomeComponent: FC<CasinoHomeComponentProps> = ({
             marginLeft={0.4}
             color={"white"}
           >
-            Pogledaj sve
+            所有
           </Typography>
         </Button>
       </Box>
@@ -263,7 +263,7 @@ const CasinoHomeComponent: FC<CasinoHomeComponentProps> = ({
         >
           <BoltIcon sx={{ color: "orange", marginRight: 1 }}></BoltIcon>
           <Typography fontSize={16}>
-            <b>NOVE IGRE</b>
+            <b>新游戏</b>
           </Typography>
         </Box>
         {/* <Button
@@ -323,7 +323,7 @@ const CasinoHomeComponent: FC<CasinoHomeComponentProps> = ({
             marginLeft={0.4}
             color={"white"}
           >
-            Pogledaj sve
+            所有
           </Typography>
         </Button>
       </Box>
@@ -352,7 +352,7 @@ const CasinoHomeComponent: FC<CasinoHomeComponentProps> = ({
 
       <Box sx={{ width: "86%", marginBottom: 1, marginTop: 1 }}>
         <Typography fontSize={16}>
-          <b>PROVAJDERI</b>
+          <b>供应商</b>
         </Typography>
       </Box>
 

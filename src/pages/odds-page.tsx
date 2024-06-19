@@ -43,7 +43,7 @@ const OddsPage: FC = () => {
     const fetchSports = async () => {
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/categories/oddrange/s?annex=0&${timeParam}`,
+          `https://ibet2.365.rs/restapi/offer/zh/categories/oddrange/s?annex=0&${timeParam}`,
           {
             params: {
               toOdd: oddValue,
@@ -66,7 +66,7 @@ const OddsPage: FC = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `https://ibet2.365.rs/restapi/offer/sr/oddrange/${sportId}/mob?annex=0&${timeParam}`,
+          `https://ibet2.365.rs/restapi/offer/zh/oddrange/${sportId}/mob?annex=0&${timeParam}`,
           {
             params: {
               toOdd: oddValue,
@@ -85,7 +85,7 @@ const OddsPage: FC = () => {
     fetchMatches();
   }, [oddValue, sportId, timeParam]);
 
-  console.log("sports", sports);
+  // console.log("sports", sports);
 
   const oddButtons = [
     { id: 0, name: "1.25", odd: 1.25 },
@@ -157,7 +157,7 @@ const OddsPage: FC = () => {
     }
   };
 
-  const title = "Kvote < 2";
+  const title = "赔率 < 2";
 
   return (
     <Box
@@ -198,7 +198,7 @@ const OddsPage: FC = () => {
           mb: 2,
         }}
       >
-        <Typography mb={1}>Izaberite maksimalnu kvotu</Typography>
+        <Typography mb={1}>选择最高赔率</Typography>
         <Box
           sx={{
             display: "flex",
@@ -238,7 +238,7 @@ const OddsPage: FC = () => {
           width: "100%",
         }}
       >
-        <Typography>Izaberite termin</Typography>
+        <Typography>选择时间</Typography>
         <Box
           sx={{
             display: "flex",
@@ -267,11 +267,11 @@ const OddsPage: FC = () => {
               width: "100%",
             }}
           >
-            <Typography onClick={() => handleSliderChange(1)}>1h</Typography>
-            <Typography onClick={() => handleSliderChange(2)}>3h</Typography>
-            <Typography onClick={() => handleSliderChange(3)}>Danas</Typography>
-            <Typography onClick={() => handleSliderChange(4)}>3d</Typography>
-            <Typography onClick={() => handleSliderChange(5)}>Sve</Typography>
+            <Typography onClick={() => handleSliderChange(1)}>1小时</Typography>
+            <Typography onClick={() => handleSliderChange(2)}>3小时</Typography>
+            <Typography onClick={() => handleSliderChange(3)}>今天</Typography>
+            <Typography onClick={() => handleSliderChange(4)}>3天</Typography>
+            <Typography onClick={() => handleSliderChange(5)}>全部</Typography>
           </Box>
         </Box>
       </Box>

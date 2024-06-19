@@ -36,35 +36,35 @@ const CasinoMainNavigation: FC<CasinoMainNavigationProps> = ({
         onClick={() => handleNavigationClick("Početna")}
       >
         <HomePageIcon fill={"#FFC211"} width={"1em"} height={"1em"} />
-        <Typography fontSize={10}>Početna</Typography>
+        <Typography fontSize={10}>首页</Typography>
       </IconButton>
       <IconButton
         sx={{ display: "flex", flexDirection: "column" }}
         onClick={() => handleNavigationClick("Slotovi")}
       >
         <SlotsIcon fill={"#FFC211"} />
-        <Typography fontSize={10}>Slotovi</Typography>
+        <Typography fontSize={10}>老虎机</Typography>
       </IconButton>
       <IconButton
         sx={{ display: "flex", flexDirection: "column" }}
         onClick={() => handleNavigationClick("Live Dealer")}
       >
         <LiveDealerIcon fill={"#FFC211"} />
-        <Typography fontSize={10}>Live Dealer</Typography>
+        <Typography fontSize={10}>真人荷官</Typography>
       </IconButton>
       <IconButton
         sx={{ display: "flex", flexDirection: "column" }}
         onClick={() => handleNavigationClick("SviProvajderi")}
       >
         <ProvidersIcon fill={"#FFC211"} />
-        <Typography fontSize={10}>Provajderi</Typography>
+        <Typography fontSize={10}>供应商</Typography>
       </IconButton>
       <IconButton
         sx={{ display: "flex", flexDirection: "column" }}
         onClick={() => handleNavigationClick("Virtuals")}
       >
         <VirtualsDiceIcon fill={"#FFC211"} />
-        <Typography fontSize={10}>Virtuali</Typography>
+        <Typography fontSize={10}>虚拟游戏</Typography>
       </IconButton>
     </Box>
   );

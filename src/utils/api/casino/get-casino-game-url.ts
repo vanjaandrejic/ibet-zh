@@ -9,7 +9,7 @@ const getGameartGameUrl = async (gameId: string, demo: boolean) => {
     };
 
     const response = await axios.get(
-      `https://ibet2.365.rs/ibet/gameart/gameUrl.json?gameId=${gameId}&demo=${demo}&mobileVersion=2.27.49&locale=sr`,
+      `https://ibet2.365.rs/ibet/gameart/gameUrl.json?gameId=${gameId}&demo=${demo}&mobileVersion=2.27.49&locale=zh`,
       {
         headers: headers,
       }

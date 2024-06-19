@@ -123,7 +123,7 @@ const SideCasinoDrawer: React.FC<SideCasinoDrawerProps> = ({
             color: "black",
           }}
         >
-          <b>PROVAJDERI</b>
+          <b>供应商</b>
         </Typography>
       </Button>
 

@@ -442,7 +442,7 @@ const NormalTicket: FC<{
               }}
             >
               <Typography color="white" fontSize={10} sx={{ marginRight: 1 }}>
-                <b>Kvota</b>
+                <b>赔率</b>
               </Typography>
               <Typography fontSize={14} color="#f1b812">
                 <b>{totalOdd.toFixed(2)}</b>
@@ -477,7 +477,7 @@ const NormalTicket: FC<{
               }}
             >
               <Typography color="white" fontSize={10} sx={{ marginRight: 1 }}>
-                <b>Uplata</b>
+                <b>支付</b>
               </Typography>
               <TextField
                 sx={{
@@ -541,7 +541,7 @@ const NormalTicket: FC<{
             }}
           >
             <Typography color="white" fontSize={10} sx={{ marginRight: 1 }}>
-              <b>Pot. Dobitak</b>
+              <b>可能赢得</b>
             </Typography>
             <Typography fontSize={14} color="#f1b812">
               <b>{potentialWiningWithBonusDislpay}</b>
@@ -567,7 +567,7 @@ const NormalTicket: FC<{
                 <CircularProgress />
               ) : (
                 <Typography sx={{ color: "black" }}>
-                  <b>Uplata</b>
+                  <b>支付</b>
                 </Typography>
               )}
             </Button>

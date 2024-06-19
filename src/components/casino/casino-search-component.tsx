@@ -97,7 +97,7 @@ const CasinoSearchComponent: FC<CasinoSearchComponentProps> = ({
       }}
     >
       <TextField
-        label="Pretraži svoju igru..."
+        label="搜索你的游戏..."
         size="small"
         color="warning"
         onChange={handleSearchChange}
