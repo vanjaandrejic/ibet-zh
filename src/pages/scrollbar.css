@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #08080f;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f1b812;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #08080f;
+  }
+
+  ::-webkit-scrollbar {
+    height: 6px; /* height of horizontal scrollbar ← You're missing this */
+    width: 6px; /* width of vertical scrollbar */
+    /* border: 1px solid #d5d5d5; */
+  }
+}
