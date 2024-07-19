@@ -9,9 +9,13 @@ const ResultPage: FC = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          // body: JSON.stringify({
-
-          // }),
+          body: JSON.stringify({
+            p_username: "marcco",
+            p_password: "newfrontback",
+            p_from_date: "01.07.2024",
+            p_to_date: "19.07.2024",
+            p_online_user: "bakaprase",
+          }),
         });
 
         if (!response.ok) {
