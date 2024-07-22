@@ -14,8 +14,10 @@ export default async (req, res) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: req.body,
+      body: JSON.stringify(req.body),
     });
+
+    console.log("BODY", req.body);
 
     if (!apiResponse.ok) {
       throw new Error(`API call failed with status: ${apiResponse.status}`);
