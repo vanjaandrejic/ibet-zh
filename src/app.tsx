@@ -4,7 +4,7 @@ import HomePage from "./pages/home-page";
 import TopNavigation from "./components/navigation/top-navigation";
 import BotNavigation from "./components/navigation/bot-navigation";
 // import TicektPage from "./pages/ticket-page";
-// import ResultPage from "./pages/results-page";
+import ResultPage from "./pages/results-page";
 // import Statusticket from "./pages/status-ticket-page";
 import LastMinutePage from "./pages/last-minute-page";
 import OddsPage from "./pages/odds-page";
@@ -57,7 +57,7 @@ export default function App() {
             element={isDesktop ? <HomePageDesktop /> : <HomePage />}
           />
           {/* <Route path="/ticket" element={<TicektPage />} /> */}
-          {/* <Route path="/result" element={<ResultPage />} /> */}
+          <Route path="/result" element={<ResultPage />} />
           {/* <Route path="/status" element={<Statusticket />} /> */}
           <Route path="/lastminute" element={<LastMinutePage />} />
           <Route path="/oddrange" element={<OddsPage />} />
