@@ -8,13 +8,19 @@ export default async (req, res) => {
     req.headers["x-forwarded-for"] || req.connection.remoteAddress;
   console.log(`Request received from IP address: ${requestIpAddress}`);
 
+  const body = {
+    p_username: "marcco",
+    p_password: "newfrontback",
+    ...req.body,
+  };
+
   try {
     const apiResponse = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(req.body),
+      body: JSON.stringify(body),
     });
 
     console.log("BODY", req.body);
